@@ -7,12 +7,12 @@ def return_dataset_images(train_loader, total_images):
     fig = plt.figure()
 
     for i in range(12):
-    plt.subplot(3,4,i+1)
-    plt.tight_layout()
-    plt.imshow(batch_data[i].squeeze(0), cmap='gray')
-    plt.title(batch_label[i].item())
-    plt.xticks([])
-    plt.yticks([])
+      plt.subplot(3,4,i+1)
+      plt.tight_layout()
+      plt.imshow(batch_data[i].squeeze(0), cmap='gray')
+      plt.title(batch_label[i].item())
+      plt.xticks([])
+      plt.yticks([])
 
 
 def GetCorrectPredCount(pPrediction, pLabels):
